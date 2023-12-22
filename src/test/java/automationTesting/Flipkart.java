@@ -23,6 +23,7 @@ public class Flipkart {
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver",
 				"Chromedriver_path");
+		//Edit Chromedriver_path with your actual path
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		driver = new ChromeDriver();
 
