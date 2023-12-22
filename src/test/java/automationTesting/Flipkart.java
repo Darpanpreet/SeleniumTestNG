@@ -22,7 +22,7 @@ public class Flipkart {
 	@BeforeClass
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\darpa\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+				"Chromedriver_path");
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		driver = new ChromeDriver();
 
@@ -54,16 +54,6 @@ public class Flipkart {
 		actions.moveToElement(mi).click().perform();
 		actions.release();
 	}
-
-	/*
-	 * @Test(priority = 3, groups = "Sanity, Regression") public void verify(String
-	 * string) { /*string = "Latest from MI"; //no such element on the page
-	 * WebElement ltstfrmMI = driver.findElement(By.xpath("element"));
-	 * if(ltstfrmMI.isDisplayed() && ltstfrmMI.isEnabled() &&
-	 * ltstfrmMI.getText().equalsIgnoreCase(string)){
-	 * System.out.println("Latest from MI is visible on page"); } else {
-	 * System.out.println("Latest from MI is not visible on the page"); }}
-	 */
 
 	@Test(priority = 3, groups = "Sanity, Regression")
 	public void priceSlider() throws Exception {
